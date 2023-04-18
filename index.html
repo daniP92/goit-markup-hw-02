@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
     <title>Studio</title>
   </head>
   <body>
-    <header>
-      <h3><a href="index.html"><span>Web</span>Studio</a></h3>
-      <nav>
+    <header class="global-header">
+      <h3 class="logo-section"><a href="index.html"><span>Web</span>Studio</a></h3>
+      <nav class="nav-list">
         <ul>
-          <li><a href="index.html">Studio</a></li>
+          <li><a href="index.html"><span>Studio</span></a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+12127724150">+1 212-772-4150</a>
-      <!--Logo-urile pt Studio si eMail ce le vom stiliza mai tarziu in CSS-->
-      <span><img src="./assets/logo.svg" alt="Click Studio logo" width="13" height="16"></span>
-      <span><img src="./assets/logo.svg" alt="Click eMail logo" width="13" height="16"></span>
+      <a href="mailto:info@devstudio.com" class="mail-header" style="color: #2196F3;">info@devstudio.com</a>
+      <a href="tel:+12127724150" class="phone-header">+1 212-772-4150</a>
+      <!--Selection indicator-->
+      <!-- <span id="studio-indicator"><img src="./assets/logo.svg" alt="Studio select logo" width="13" height="16"></span>
+      <span id="email-indicator"><img src="./assets/logo.svg" alt="eMail select logo" width="13" height="16"></span> -->
     </header>
     <main>
       <!--Top section-->
-      <section>
+      <section class="top-banner">
         <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button">Request our service</button>
+        <button type="button"><span>Request our service</span></button>
       </section>
       <!--About us section-->
       <section>
-        <ul>
+        <ul class="about-us">
           <li>
             <h5>ATTENTION TO DETAILS</h5>
             <p>We go into all the details and processes of your business to develop a customized solution.</p>
@@ -50,43 +54,47 @@
         </ul>
       </section>
       <!--What we do section-->
-      <section>
+      <section class="what-we-do">
         <h2>What we do</h2>
-        <img src="./assets/img1wwd.jpg" alt="Coding.." width="370" height="294">
-        <img src="./assets/img2wwd.jpg" alt="Checking phone.." width="370" height="294">
-        <img src="./assets/img3wwd.jpg" alt="And sometimes our tablet :D" width="370" height="294">
+        <ul>
+          <li><img src="./assets/img1wwd.jpg" alt="Coding.." width="370" height="294"></li>
+          <li><img src="./assets/img2wwd.jpg" alt="Checking phone.." width="370" height="294"></li>
+          <li><img src="./assets/img3wwd.jpg" alt="And sometimes our tablet :D" width="370" height="294"></li>
+        </ul>
       </section>
       <!--Our team section-->
-      <section>
+      <section class="our-team">
         <h2>Our Team</h2>
-        <div>
-          <img src="./assets/img1ot.jpg" alt="Picture of Chris" width="270" height="260">
-          <h4>Christopher Walker</h4>
-          <p>Product Designer</p>
-        </div>
-        <div>
-          <img src="./assets/img2ot.jpg" alt="Picture of Kylie" width="270" height="260">
-          <h4>Kylie Evans</h4>
-          <p>Frontend Developer</p>
-        </div>
-        <div>
-          <img src="./assets/img3ot.jpg" alt="Picture of Ryan" width="270" height="260">
-          <h4>Ryan Harris</h4>
-          <p>Marketing</p>
-        </div>
-        <div>
-          <img src="./assets/img4ot.jpg" alt="Picture of Tyler" width="270" height="260">
-          <h4>Tyler Moore</h4>
-          <p>UI Designer</p>
-        </div>
+        <ul>
+          <li>
+            <img src="./assets/img1ot.jpg" alt="Picture of Chris" width="270" height="260">
+            <h4>Christopher Walker</h4>
+            <p>Product Designer</p>
+          </li>
+          <li>
+            <img src="./assets/img2ot.jpg" alt="Picture of Kylie" width="270" height="260">
+            <h4>Kylie Evans</h4>
+            <p>Frontend Developer</p>
+          </li>
+          <li>
+            <img src="./assets/img3ot.jpg" alt="Picture of Ryan" width="270" height="260">
+            <h4>Ryan Harris</h4>
+            <p>Marketing</p>
+          </li>
+          <li>
+            <img src="./assets/img4ot.jpg" alt="Picture of Tyler" width="270" height="260">
+            <h4>Tyler Moore</h4>
+            <p>UI Designer</p>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer-section">
       <h3><a href="index.html"><span>Web</span>Studio</a></h3>
       <address>
         <p>695 Park Ave, NY 10065, USA</p>
-        <a href="mailto:info@devstudio.com">info@devstudio.com<br></a>
-        <a href="tel:+12127724150">+1 212-772-4150</a>
+        <a href="mailto:info@devstudio.com" class="mail-footer">info@devstudio.com<br></a>
+        <a href="tel:+12127724150" class="phone-footer">+1 212-772-4150</a>
       </address>
     </footer>
   </body>
